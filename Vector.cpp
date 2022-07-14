@@ -88,13 +88,25 @@ int main()
     v.push_back(0);
     // for(const int& i:v)
       // cout<<"\n Vector"<<i;
-//Access element of a vector
-cout<<"\nElement at index 0 is: "<<v.at(0);
-cout<<"\nElement at index 2 is :"<<v.at(2);
-cout<<"\nElement at index 4 is :"<<v.at(4);
+// //Access element of a vector
+// cout<<"\nElement at index 0 is: "<<v.at(0);
+// cout<<"\nElement at index 2 is :"<<v.at(2);
+// cout<<"\nElement at index 4 is :"<<v.at(4);
+
+// // change vector element
+// v.at(0) = 9;
+// v.at(1) = 10;
+// cout<<"\nElement at index 0 is: "<<v.at(0);
+// cout<<"\nElement at index 1 is"<<v.at(1);
+
+//deletion of a element from vector
+v.pop_back();
+for(int &i:v)
+cout<<"\nElement at index "<<i;
 
 
-
-
+//vector iterators
+//same as pointer 
+vector<int>::iterator i1;
     return 0;
 }
